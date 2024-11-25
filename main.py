@@ -1,3 +1,6 @@
+
+import warnings
+warnings.filterwarnings('ignore')
 import streamlit as st
 import os, sys
 dir_path = os.path.dirname(os.path.realpath(__file__))
