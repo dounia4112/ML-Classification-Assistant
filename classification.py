@@ -69,7 +69,7 @@ def app():
                 st.write("### Performance Metrics")
                 report = classification_report(y_test, predictions, output_dict=True)
                 report_df = pd.DataFrame(report).transpose()
-                st.write("### Classification Metrics")
+                # st.write("### Classification Metrics")
                 st.dataframe(report_df.style.format(precision=2))
             with tab2:
                 cm = confusion_matrix(y_test, predictions, labels=clf.classes_)
